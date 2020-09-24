@@ -3,11 +3,15 @@ import './App.css';
 import { Layout, Navigation, Drawer, Content } from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 
 function App() {
   return (
     <div id="drawer">
+        <Helmet>
+            <title>Eric Park</title>
+        </Helmet>
         <Layout Drawer>
             <Drawer>
                 <Navigation>
